@@ -1,0 +1,34 @@
+body {
+  background-color: #FF3300;
+  color:#FFD700;
+}
+
+#rando-quote {
+  color: #FFD700;
+  position:fixed;
+  bottom:0;
+  left:42%;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center !important;
+}
+
+#tweet {
+  display:none;
+}
+
+#intro {
+  text-align: center;
+}
+
+@media only screen and (min-width: 64.063em) {
+/*  footer.row {
+    width:100%;
+  }
+  #rando-quote {
+    left: 50%;
+  }*/
+}
