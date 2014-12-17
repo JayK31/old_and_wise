@@ -65,3 +65,7 @@ end
 gem "simplecov", require: false, group: :test
 
 gem 'foundation-rails'
+
+group :production do
+  gem 'rails_12factor'
+end
