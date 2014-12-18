@@ -17,7 +17,8 @@ $(function() {
       $("#wiki").text(wiki.substring(0, 350)+"...");
       $("[data-author='wiki']").attr("href", url).addClass("button small radius");
       $("[data-author='wiki']").text("wiki/"+author);
-      $("#tweet").show().attr("href", "http://twitter.com/home/?status="+quote+" -"+author+" #ancientwitties");
+      $("#tweet").show().attr("href", "http://twitter.com/home/?status="+quote+" -"+author+"#ancientwitties").
+        attr("target", "_blank");
     });
   });    
 })
