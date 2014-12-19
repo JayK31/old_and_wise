@@ -14,5 +14,6 @@
  *= require_self
  *= require foundation_and_overrides
  *= require main.css
+ *= require jquery.growl.css
 
  */

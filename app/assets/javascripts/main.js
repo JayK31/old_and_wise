@@ -1,4 +1,5 @@
 $(function() {
+
   $("#rando-quote-button").click(function(e) {
     e.preventDefault();
     $("#intro").hide();
@@ -19,6 +20,9 @@ $(function() {
       $("#tweet").show().attr("href", "http://twitter.com/home/?status="+quote+" -"+author+"#ancientwitties").
         attr("target", "_blank");
         $("#tweet").attr("data-tooltip", "").attr("title", "Click me!");
+        if($("#quote-paragraph").height() >= 300) {
+          $.growl.notice({title: "There's More!", message: "Scroll to see the rest of the quote!"})
+        }
     });
   });
 })

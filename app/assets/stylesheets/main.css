@@ -32,6 +32,8 @@ a[data-author='wiki'] {
 #quote-paragraph {
   text-align: center;
   margin-top:60px;
+  max-height:300px;
+  overflow:auto;
 }
 
 #quote-paragraph p {

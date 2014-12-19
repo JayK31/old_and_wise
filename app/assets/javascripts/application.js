@@ -15,6 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require main
+// = require jquery.growl.js
 
 
 $(function(){ $(document).foundation(); });
