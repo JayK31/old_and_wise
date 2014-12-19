@@ -1,35 +1,67 @@
 body {
   background-color: #FF3300;
   color:#FFD700;
-}
-
-#rando-quote {
-  color: #FFD700;
-  position:fixed;
-  bottom:0;
-  width: 90%;
-  margin-left:5%;
-}
-
-footer {
-  position: fixed;
-  bottom: 10px;
-  text-align: center !important;
+  text-align: center;
 }
 
 #tweet {
   display:none;
+  vertical-align: middle;
 }
 
-#intro {
+#tweet img {
+  height:30px;
+  width:30px;
+  display:inline-block;
+}
+
+#quote {
+  display: inline;
+  vertical-align: middle;
+}
+
+p#wiki {
+  display: inline;
+  font-family: 'Old Standard TT', serif;
+}
+
+a[data-author='wiki'] {
+  display: inline-block;
+}
+
+#quote-paragraph {
+  text-align: center;
+  margin-top:60px;
+}
+
+#quote-paragraph p {
+  font-size:35px;
+  font-family: 'Cinzel', serif;
+}
+
+#author-description {
   text-align: center;
 }
 
-@media only screen and (min-width: 64.063em) {
-/*  footer.row {
-    width:100%;
-  }
-  #rando-quote {
-    left: 50%;
-  }*/
+#rando-quote-button {
+  color: #FFD700;
+  margin-top:20px;
+  width: 90%;
+  font-family: 'Cinzel', serif;
+}
+
+#author-name {
+  font-size: 20px;
+  font-family: 'Old Standard TT', serif;
+}
+
+footer{
+  margin-bottom: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
 }

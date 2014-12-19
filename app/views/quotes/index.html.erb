@@ -1,26 +1,35 @@
 <div class="row">
-  <div class="large-9 columns" style="text-align:center;">
+  <div class="large-12 columns" style="text-align:center;">
     <h1>Ancient Witties</h1>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-9 columns">
+  <div class="large-12 columns">
     <div id="quote-paragraph">
       <p id="quote"></p>
+      <%= link_to "", :id => "tweet" do %>
+        <span data-tooltip title="Click to tweet this ancient witty!
+          #ancientwitties">
+          <%= image_tag("twitter-icon.png") %>
+        </span>
+      <% end %>
       <p id="author"></p>
       <p id="intro">Craving an ancient anecdote? Click and be inspired!</p>
-      <%= link_to "", :id => "tweet" do %>
-        <%= image_tag("twitter-icon.png") %>
-      <% end %>
     </div>
   </div>
-
-  <aside class="large-3 columns">
-    <h3 id="author-name"></h3>
-    <p id="wiki"></p>
-    <%= link_to "", :data => { :author => "wiki" } %>
-  </aisde>
 </div>
 
-<%= link_to "Oldie But Goody", "javascript:void(0);", :id => "rando-quote", :class => "button expand radius"%>
+<footer>
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="author-description">
+        <h2 id="author-name"></h2>
+        <p id="wiki"></p>
+        <%= link_to "", "",:data => { :author => "wiki" } %>
+      </div>
+
+      <%= link_to "Oldie But Goodie", "javascript:void(0);", :id => "rando-quote-button", :class => "button expand radius"%>
+    </div>
+  </div>
+</footer>

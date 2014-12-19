@@ -1,5 +1,5 @@
 $(function() {
-  $("#rando-quote").click(function(e) {
+  $("#rando-quote-button").click(function(e) {
     e.preventDefault();
     $("#intro").hide();
     $.ajax({
@@ -14,11 +14,11 @@ $(function() {
       $("#quote").text(quote);
       $("#author").text(author);
       $("#author-name").text(author);
-      $("#wiki").text(wiki.substring(0, 350)+"...");
-      $("[data-author='wiki']").attr("href", url).addClass("button small radius");
-      $("[data-author='wiki']").text("wiki/"+author);
+      $("#wiki").text(wiki.substring(0, 500)+"...");
+      $("[data-author='wiki']").attr("href", url).text("wiki/"+author);
       $("#tweet").show().attr("href", "http://twitter.com/home/?status="+quote+" -"+author+"#ancientwitties").
         attr("target", "_blank");
+        $("#tweet").attr("data-tooltip", "").attr("title", "Click me!");
     });
-  });    
+  });
 })
